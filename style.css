@@ -1,0 +1,159 @@
+body
+{
+    background-color: black;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:10%;
+}
+.box
+{
+    width: 90%;
+    background-color: white;
+    height: 400px;
+}
+#stickman
+{
+    background-image: url("https://c.tenor.com/Pvf58wBw6aAAAAAM/stickman-running.gif");
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    position: relative;
+    top:300px;
+    
+}
+#obs
+{
+    background-image: url("https://toppng.com/uploads/preview/cactus-of-mexico-svg-png-icon-free-download-cactus-black-11563585575ek0um6pzqt.png");
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top:220px;
+    left: 89%;
+    animation: run 1s infinite linear;
+}
+@keyframes run 
+{
+    0%
+    {
+        left: 89%;
+    }    
+    100%
+    {
+        left: -10%;
+    }
+}
+.jump
+{
+    animation: jump 0.5s linear; 
+}
+@keyframes jump 
+{
+    0%
+    {
+        top:300px
+    }
+    25%
+    {
+        top:230px;
+    }
+    50%
+    {
+        top:190px;
+    }
+    75%
+    {
+        top:230px;
+    }
+    100%
+    {
+        top:300px;
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    .box
+    {
+        width: 90%;
+        background-color: white;
+        height: 300px;
+    }    
+    #stickman
+    {
+        background-image: url("https://c.tenor.com/Pvf58wBw6aAAAAAM/stickman-running.gif");
+        width: 75px;
+        height: 75px;
+        background-size: 75px 75px;
+        position: relative;
+        top:225px;
+    }
+    @keyframes jump 
+    {
+        0%
+        {
+            top:225px
+        }
+        25%
+        {
+            top:172px;
+        }
+        50%
+        {
+            top:140px;
+        }
+        72%
+        {
+            top:172px;
+        }
+        100%
+        {
+            top:225px;
+        }
+    }
+}
+@media only screen and (max-width:800px)
+{
+    .box
+    {
+        width: 90%;
+        background-color: white;
+        height: 200px;
+    }    
+    #stickman
+    {
+        background-image: url("https://c.tenor.com/Pvf58wBw6aAAAAAM/stickman-running.gif");
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        position: relative;
+        top:150px;
+    }
+    @keyframes jump 
+    {
+        0%
+        {
+            top:150px
+        }
+        25%
+        {
+            top:115px;
+        }
+        50%
+        {
+            top:95px;
+        }
+        72%
+        {
+            top:115px;
+        }
+        100%
+        {
+            top:150px;
+        }
+    }
+}
