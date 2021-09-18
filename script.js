@@ -204,12 +204,13 @@ function Update () {
       obstacles.splice(i, 1);
     }
 
-    if (
+    if(
       player.x < o.x + o.w &&
       player.x + player.w > o.x &&
       player.y < o.y + o.h &&
       player.y + player.h > o.y
     ) {
+      alert('game over');
       obstacles = [];
       score = 0;
       spawnTimer = initialSpawnTimer;
